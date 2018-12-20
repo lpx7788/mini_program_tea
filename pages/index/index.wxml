@@ -1,0 +1,134 @@
+<swiper wx:if="{{!!slide_list.length}}" class='swiper' circular="circular" indicator-active-color="#fff" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{slide_list}}" wx:key="unique">
+    <swiper-item>
+      <!-- <navigator url='{{item.url}}'> -->
+      <view data-id='{{item.data}}' catchtap='linkTo' data-type="5" data-id="{{item.article_id}}">
+        <image src="{{item.image}}" class="slide-image" />
+        <!-- </navigator> -->
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='bigImg'>
+  <image src="{{culture.image}}" mode='widthFix' catchtap='linkTo' data-type="2" data-id="{{culture.article_id}}"></image>
+</view>
+
+<view class='info'>
+  <view class='Title flex'>
+    <view class='name'>茶园管护</view>
+    <view class='more' bindtap='linkTo' data-type="1">查看更多</view>
+  </view>
+  <view class='content'>
+    <view class='li flex' wx:for="{{article}}" wx:if="index<3" wx:key="index" catchtap='linkTo' data-type="2" data-id="{{item.article_id}}">
+      <view class='detail'>
+        <view class='Til'>{{item.article_title}}</view>
+        <view class='til'>{{item.article_abstract || '暂无副标题'}}</view>
+        <view class='tion flex'>
+          <view class='time'>{{item.article_times}}</view>
+          <view class='nums'>{{item.article_click}}人浏览</view>
+        </view>
+      </view>
+      <view >
+        <image class='infoImg'  src="{{item.image}}" mode="aspectFit"></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='info'>
+  <view class='Title flex'>
+    <view class='name'>在售茶园</view>
+    <view class='more' bindtap='linkTo' data-type="3">查看更多</view>
+  </view>
+  <view class='ul flex bt' style='display:none'>
+    <view class='li' wx:for="{{[1,2,2,3,3,4,4]}}">
+      <block wx:if="{{index%2 === 0}}">
+        <view class='pic'>
+          <image src="{{http}}/p{{item}}.png" mode='widthFix'></image>
+        </view>
+      </block>
+      <block wx:else>
+        <view class='pic2'>
+          <image src="../../../image/p5.png" mode='widthFix'></image>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='ul flex bb'  style='display:none'>
+    <view class='li' wx:for="{{['场地AR实景',2,'选择土地',3,'支付',4,'购买成功']}}">
+      <block wx:if="{{index%2 === 0}}">
+        <view class='name'>{{item}}</view>
+      </block>
+      <block wx:else>
+        <view class='blank'></view>
+      </block>
+    </view>
+  </view>
+  <view class='tea'>
+    <view class='bg' style='background: url({{tea.goods_image}}) no-repeat;background-size: cover;background-position: center;' bindtap='Jump' data-goods_id="{{tea.goods_id}}">
+      <view class='name'>{{tea.store_name}}</view>
+      <image src="{{tea.goods_image}}" style="display:none" mode='widthFix' class='photo1'></image>
+      <image src="{{tea.goods_image}}"  style="display:none" mode='widthFix' class='photo2'></image>
+    </view>
+    <view class='flex addresss'>
+      <view class='area'>{{tea.goods_name}}</view>
+      <view class='money'>
+        <text>￥{{tea.goods_price}}</text>/份/0.5亩</view>
+    </view>
+    <view class='flex'>
+      <view class='area'>{{tea.goods_jingle}}</view>
+      <view class='money'>销量
+        <text>{{tea.goods_salenum}}</text> </view>
+    </view>
+  </view>
+</view>
+<view class='info' style='display:none;'>
+  <view class='Title flex'>
+    <view class='name'>在售商品</view>
+    <view class='more' bindtap='linkTo' data-type="4">查看更多</view>
+  </view>
+</view>
+ <!-- style='display:none;' -->
+<view class='shopping-list lists' style='display:none;'>
+  <view class='left'>
+    <block wx:for="{{goods_list[0]}}" wx:key="unique" wx:for-item='items'>
+      <view wx:for='{{items}}' bindtap='Jump' class='shopping-item' data-goods_id="{{item.goods_id}}" data-index="{{item.index}}">
+        <view class='shopping-img'>
+          <!-- mode='aspectFit' -->
+          <image src='{{item.goods_image}}' mode='widthFix'></image>
+        </view>
+        <view>
+          <view class='shopping-text'>{{item.goods_name}}</view>
+          <view class='shopping-flex'>
+            <view>￥{{item.goods_price}}</view>
+            <view>
+              <icon class='fa fa-gg-circle'></icon>{{item.integral_limit}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class='right'>
+    <block wx:for="{{goods_list[1]}}" wx:key="unique" wx:for-item='items'>
+      <view wx:for='{{items}}' bindtap='Jump' class='shopping-item' data-goods_id="{{item.goods_id}}" data-index="{{item.index}}">
+        <view class='shopping-img'>
+          <!-- mode='aspectFit' -->
+          <image src='{{item.goods_image}}' mode='widthFix'></image>
+        </view>
+        <view>
+          <view class='shopping-text'>{{item.goods_name}}</view>
+          <view class='shopping-flex'>
+            <view>￥{{item.goods_price}}</view>
+            <view>
+              <icon class='fa fa-gg-circle'></icon>{{item.integral_limit}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<block wx:if="{{ReachBottomBloo}}">
+  <view class='ReachBottom'>—— 这是我的底线 ——</view>
+</block>

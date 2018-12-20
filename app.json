@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/http/http",
+    "pages/http/http1",
+    "pages/index/demo1",
+    "pages/rate/rate1",
+    "pages/index/shopList2",
+    "pages/index/shopList1",
+    "pages/index/info_detail",
+    "pages/index/infoList",
+    "pages/share/share",
+    "pages/index/shopping_detail",
+    "pages/order/order_list1",
+    "pages/order/order_list",
+    "pages/rate/rate",
+    "pages/index/demo",
+    "pages/order/order_detail",
+    "pages/pay/pay",
+    "pages/web_view/web_view",
+    "pages/break/break",
+    "pages/user_center/user_center",
+    "pages/browse_distribution/browse_distribution",
+    "pages/my_distribution/my_distribution",
+    "pages/my_join_detail/my_join_detail",
+    "pages/my_join/my_join",
+    "pages/develop/develop",
+    "pages/break_good/break_good",
+    "pages/create_distribution/create_distribution",
+    "pages/question_detail/question_detail",
+    "pages/question_list/question_list",
+    "pages/feedback/feedback",
+    "pages/cash_detail/cash_detail",
+    "pages/account_detail/account_detail",
+    "pages/cash_list/cash_list",
+    "pages/account_list/account_list",
+    "pages/cash/cash",
+    "pages/goods_detail/goods_detail",
+    "pages/my_tea_production/index",
+    "pages/my_setting/index",
+    "pages/my_generalize/index",
+    "pages/my_packaging/index",
+    "pages/my_video/index",
+    "pages/my_message/index",
+    "pages/banner_detail/index",
+    "pages/my_phone/index",
+    "pages/my_tea_production_list/index",
+    "pages/my_scene/index",
+    "pages/login/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#000",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "selectedIconPath": "image/2@2x.png",
+        "iconPath": "image/22@2x.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/3@2x.png",
+        "iconPath": "image/33@2x.png",
+        "pagePath": "pages/user_center/user_center",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+<!--pages/index/infoList.wxml-->
+<view class='info'>
+  <view class='content'>
+    <view class='li flex' wx:for="{{list}}" wx:key="index" catchtap='linkTo' data-type="2" data-id="{{item.article_id}}">
+      <view class='detail'>
+        <view class='Til'>{{item.article_title}}</view>
+        <view class='til'>{{item.article_abstract}}</view>
+        <view class='tion flex'>
+          <view class='time'>{{item.article_times}}</view>
+          <view class='nums'>{{item.article_click}}人浏览</view>
+        </view>
+      </view>
+      <view class='infoImg'>
+         <image src="{{item.image}}" mode="aspectFit"></image>
+      </view>
+    </view>
+  </view>
+</view>

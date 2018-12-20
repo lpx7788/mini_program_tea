@@ -1,0 +1,156 @@
+/* pages/order/order_deatil.wxss */
+
+page {
+  background-color: #eee;
+}
+
+.maxBox {
+  padding: 20rpx 60rpx;
+  border-top: 10rpx #aaa solid;
+  position: relative;
+  background-color: #fff;
+}
+
+.top_info {
+  border-bottom: 1rpx #aaa solid;
+  padding: 0 0 20rpx 0;
+  overflow: hidden;
+}
+
+.address {
+  width: 160rpx;
+  font-size: 28rpx;
+  float: left;
+}
+
+.info {
+  font-size: 28rpx;
+  line-height: 38rpx;
+  float: right;
+  width: 470rpx;
+}
+
+.txt1 {
+  display: inline-block;
+  width: 150rpx;
+}
+
+.txt2 {
+  display: inline-block;
+  width: 300rpx;
+}
+
+.content {
+  width: 100%;
+  padding: 10rpx 0 0 0;
+  font-size: 28rpx;
+  position: relative;
+}
+
+.title_id {
+  font-weight: bold;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+
+.title {
+  width: 100%;
+  overflow: hidden;
+}
+
+.t_number {
+  line-height: 35rpx;
+}
+
+.price {
+  color: red;
+  line-height: 35rpx;
+  width: 180rpx;
+  text-align: center;
+  float: right;
+}
+
+.datetime {
+  color: #aaa;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.datetime:first-child {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.datetime:last-child{
+  margin-bottom: 20rpx;
+}
+
+/* position: absolute;bottom: 93rpx;right: 0; */
+
+.btn_q {
+  width: 180rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  text-align: center;
+  background-color: rgba(178, 5, 194, 1);
+  color: #fff;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.btn_q:nth-of-type(1), .btn_q:nth-of-type(2), .btn_q:nth-of-type(3) {
+  margin-top: 0;
+}
+
+.disabled {
+  background-color: #aaa;
+}
+
+.title_code {
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+
+.state {
+  color: rgba(178, 5, 194, 1);
+}
+
+.btn_a {
+  bottom: 13rpx;
+}
+
+.btn_b {
+  bottom: 13rpx;
+}
+
+.btnc {
+  bottom: 13rpx;
+}
+
+.btn_d {
+  bottom: 13rpx;
+}
+
+.btns {
+  padding: 0 0;
+  display: flex;
+  /* justify-content: right; */
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.copy {
+  color: rgba(178, 5, 194, 1);
+}
+
+.canvasBox {
+  width: 400rpx;
+  height: 400rpx;
+  margin: 0 auto;
+  padding: 40rpx 0;
+}
+
+.canvasBox canvas {
+  width: 400rpx;
+  height: 400rpx;
+}

@@ -1,0 +1,21 @@
+
+
+<view class='info'>
+  <view class='content'>
+    <view class='li flex'  wx:for="{{dataList}}" wx:key="index" catchtap='linkTo' data-type="2" data-id="{{item.order_id}}">
+     <view >
+        <image class='infoImg'  src="{{item.goods_image}}" mode="aspectFit"></image>
+      </view>
+      <view class='detail'>
+        <view class='Til'>{{item.goods_name}}</view>
+        <view class='til'>{{item.goods_jingle || '暂无副标题'}}</view> 
+        <view class='tion flex'>
+        <view class='nums'>每份：{{item.goods_price}} 元</view> 
+        </view>
+      </view>
+     
+    </view>
+  </view>
+</view>
+
+

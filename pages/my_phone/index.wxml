@@ -1,0 +1,41 @@
+<!-- 头部 -->
+<view class='head-phone'>
+     <text class='title' wx:if='{{is_bind==0}}'>当前绑定手机:  还没有绑定手机</text>
+     <text class='title' wx:if='{{is_bind==1}}'>当前绑定手机:   {{mobile}}</text>
+</view>
+
+<!-- 选项 -->
+<view class='phone options-phone'>
+  <view class='item' >
+    <view class='left'>
+      <text class='title' wx:if='{{is_bind==0}}'>绑定手机号 </text>
+      <text class='title' wx:if='{{is_bind==1}}'>更改手机号 </text>
+
+    </view>
+    <view class='right'  style="width:255px">
+
+       <input class='create-title' type="tel" placeholder="请输入手机号码" bindinput="getMobileNum"></input>
+    </view>
+  </view>
+
+
+  <view class='item' >
+    <view class='left'>
+      <text class='title'>验证码 </text>
+    </view>
+    <view class='right code' style="width:255px">
+  
+       <input class='create-title' type="tel" placeholder="请输入验证码" bindinput="getCodeNum"></input>
+     
+      <button disabled='{{disabled}}' class="title" data-id="2" bindtap="getPoneCaptcha" style="background:#fff;font-size:10px;padding:4px">
+      {{time}}
+      </button>
+    </view>
+  </view>
+</view>
+
+<view class='sumbmitBtn'>
+  <button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}"
+    bindtap="submitBtn" hover-class="button-hover" class="margin-button"> 确定 </button>
+</view>
+

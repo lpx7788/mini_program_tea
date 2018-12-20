@@ -1,0 +1,91 @@
+page {
+  background: #f8f8f8;
+}
+
+.my_create {
+  color: #454545;
+  font-size: 32rpx;
+  text-align: center;
+  padding-top: 20rpx;
+  position: relative;
+}
+
+.my_create view::before {
+  position: absolute;
+  content: '';
+  background: rgba(0, 0, 0, 0.2);
+  height: 2rpx;
+  top: 38rpx;
+  width: 30%;
+  left: 40rpx;
+}
+
+.my_create view:after {
+  position: absolute;
+  content: '';
+  background: rgba(0, 0, 0, 0.2);
+  height: 2rpx;
+  top: 38rpx;
+  width: 30%;
+  right: 40rpx;
+}
+
+.distribution_box {
+  padding: 40rpx;
+}
+
+.distribution_box .distribution_list {
+  height: 212rpx;
+  background: #fff;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+  border-radius: 10rpx;
+}
+
+.distribution_box .distribution_list:last-child {
+  border-bottom: 0;
+}
+
+.distribution_box .distribution_list .distribution_img {
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 50%;
+}
+
+.distribution_box .distribution_list .distribution_info {
+  width: 75%;
+  padding-left: 20rpx;
+}
+
+.distribution_box .distribution_list .distribution_info .distribution_title {
+  font-size: 36rpx;
+  color: #101010;
+  line-height: 52rpx;
+}
+
+.distribution_box .distribution_list .distribution_info .profit {
+  font-size: 24rpx;
+  color: #bbb;
+  padding-top: 10rpx;
+  border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10rpx;
+}
+
+.distribution_box .distribution_list .distribution_info .money {
+  font-size: 36rpx;
+  color: #ff7710;
+}
+
+.distribution_box .distribution_list .distribution_info .distribution_value {
+  display: flex;
+  padding-top: 10rpx;
+}
+
+.distribution_box .distribution_list .distribution_info .distribution_value view {
+  flex-grow: 1;
+  flex: 1;
+  font-size: 24rpx;
+  color: #bbb;
+}

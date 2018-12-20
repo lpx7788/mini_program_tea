@@ -1,0 +1,5 @@
+<!--pages/order/order_list1.wxml-->
+<view class='types'>
+  <view  class='con' data-type='r' catchtap='getType'>商品</view>
+  <view  class='con' data-type='v' catchtap='getType'>门票</view>
+</view>

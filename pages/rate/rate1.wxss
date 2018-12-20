@@ -1,0 +1,41 @@
+/* pages/rate/rate1.wxss */
+page{
+  padding-bottom: 23px;
+}
+.flex{
+  display: flex;align-items: center;justify-content: center;flex-flow: row wrap;
+}
+.bb{
+ border-top: 2rpx #eee solid;
+}
+.line{padding: 0 30rpx;line-height: 100rpx;}
+.name{
+  flex: 1;font-size: 30rpx;text-align: justify;
+}
+.input{
+  flex: 2;line-height: 80rpx;background-color: #f8f8f8;border-radius: 20rpx;padding-left: 30rpx;height: 80rpx;
+}
+.input input{
+  line-height: 80rpx;height: 80rpx;font-size: 35rpx;
+}
+.placeholder{
+  font-size: 35rpx;
+}
+.radio-group{
+   flex: 2;line-height: 80rpx;height: 80rpx;
+}
+.radio-group .radio{
+  padding-right: 100rpx;
+}
+.text{
+  padding: 0 30rpx 20rpx 30rpx;
+}
+.text .title{
+  line-height: 80rpx;font-size: 30rpx;
+}
+.text textarea{
+  height: 200rpx;background-color: #f8f8f8;border-radius: 40rpx;padding: 20rpx;width: 650rpx;
+}
+.btn{
+  width: 300rpx;margin: 100rpx auto;
+}

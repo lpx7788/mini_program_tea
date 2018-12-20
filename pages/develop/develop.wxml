@@ -1,0 +1,10 @@
+<image class='bg' src='../../image/develop-bg.png' mode='widthFix'></image>
+<view class='panel'>
+  <view class='head'>
+    <text>小程序开发请联系</text>
+  </view>
+  <view class='body'>
+    <text data-phone='13802444467' bindtap='call'>沈小姐：13802444467</text>
+    <text data-phone='15667070616' bindtap='call'>张小姐：15667070616</text>
+  </view>
+</view>

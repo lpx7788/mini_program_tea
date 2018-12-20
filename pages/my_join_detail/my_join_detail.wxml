@@ -1,0 +1,17 @@
+<view class='head'>
+  <view class='avatar'>
+    <image src='{{ datas.goods_image }}'></image>
+  </view>
+  <view class='name'>
+    <text>{{ datas.goods_name }}</text>
+  </view>
+</view>
+
+<view class='body'>
+  <image src='{{ datas.url }}'></image>
+</view>
+
+<view class='foot'>
+  <text>订单编号：{{ datas.order_sn }}</text>
+  <text>交易时间：{{ datas.payment_time }}</text>
+</view>

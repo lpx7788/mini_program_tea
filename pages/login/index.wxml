@@ -1,0 +1,11 @@
+<!--pages/login/index.wxml-->
+<view class="wx-login-wrap">
+    <view class="wx-login-header">
+        <view class="wd-logo"></view> 
+    </view>
+    <view class="wx-login-title">该小程序由<text style='color:#e02e14;fontSize:50rpx;'> 嘉之木茶园 </text>开发，向其提供以下权限即可继续操作</view>
+    <view class="wx-login-info">获得你的公开信息（昵称、头像等）</view>
+    <view class="wx-login-btn">
+        <button bindgetuserinfo="getUserInof" openType="getUserInfo">确认登录</button>
+    </view>
+</view>

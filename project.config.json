@@ -1,0 +1,201 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wx37669545d706e516",
+	"projectname": "tea00000000",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 26,
+			"list": [
+				{
+					"id": -1,
+					"name": "my",
+					"pathName": "pages/user_center/user_center",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "tea_ production",
+					"pathName": "pages/my_tea_production/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "tea_ setting",
+					"pathName": "pages/my_setting/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "tea_ tuiguang",
+					"pathName": "pages/my_generalize/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "tea_ pack",
+					"pathName": "pages/my_packaging/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shoppng",
+					"pathName": "pages/index/shopping_detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "account",
+					"pathName": "pages/account_list/account_list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "cart",
+					"pathName": "pages/index/shopping_detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "cart",
+					"pathName": "pages/index/shopping_detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pay",
+					"pathName": "pages/user_center/user_center",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pay99",
+					"pathName": "pages/pay/pay",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "toPay",
+					"pathName": "pages/index/shopping_detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "account",
+					"pathName": "pages/account_list/account_list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "account1",
+					"pathName": "pages/account_list/account_list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "msg",
+					"pathName": "pages/my_message/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "msg",
+					"pathName": "pages/my_message/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "mag",
+					"pathName": "pages/my_message/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "hehuo",
+					"pathName": "pages/rate/rate1",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "packing",
+					"pathName": "pages/my_packaging/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "msg",
+					"pathName": "pages/my_message/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "phone",
+					"pathName": "pages/my_phone/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "list",
+					"pathName": "pages/my_tea_production_list/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "tui",
+					"pathName": "pages/my_generalize/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "chan",
+					"pathName": "pages/my_tea_production/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "p_d",
+					"pathName": "pages/my_tea_production/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "jifen",
+					"pathName": "pages/account_list/account_list"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,29 @@
+<view class="my_stting">
+  <view class='home_head'>
+    <image class='poster' wx:if="datas.member_avatar "  src='{{ datas.member_avatar }}' mode='widthFix'></image>
+    <view class="content">
+       <view class='t_name' >我的积分：{{jifen}}</view>
+    </view>
+ </view>
+ <view class="gap"></view>
+
+<view class='user_body'>
+  <view class='user_item' data-url='../my_phone/index' bindtap='goto'>
+    <view class='item'>
+      <text>绑定手机</text>
+        <view class='arrow-r'>
+              <image src='../../image/more.png' mode='widthFix'></image>
+      </view>
+    </view>
+  </view>
+  <view class='user_item' data-url='../order/order_list1' bindtap='gotoOrder'>
+    <view class='item'>
+      <text>我的地址</text>
+      <view class='arrow-r'>
+              <image src='../../image/more.png' mode='widthFix'></image>
+      </view>
+    </view>
+  </view>
+
+</view>
+</view>

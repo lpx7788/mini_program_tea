@@ -1,0 +1,22 @@
+/* pages/index/demo.wxss */
+.title{
+  text-align: center;
+  line-height: 80rpx;
+  height: 80rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333;
+}
+.time{
+  text-align: right;
+  font-size: 30rpx;
+  color: #999;
+  line-height: 50rpx;
+  padding-right: 40rpx;
+}
+.content{
+  padding: 20rpx;
+  color: #333;
+  line-height: 40rpx;
+  font-size: 30rpx;
+}

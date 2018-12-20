@@ -1,0 +1,87 @@
+.phone {
+  background: #fff;
+  font-size: 30rpx;
+}
+page{
+  height: 100%;
+  background: #f7f7f7;
+}
+
+/* 头部 */
+
+.head-phone {
+  display: flex;
+  padding-left: 30rpx;
+  height:92rpx;
+  line-height:92rpx;
+  font-size: 30rpx;
+  background: #f7f7f7;
+}
+
+.head-phone .info .vip image {
+  width: 70rpx;
+  height: 32rpx;
+} 
+
+.options-phone {
+  padding-left: 30rpx;
+}
+
+.options-phone .item {
+  display: flex;
+  justify-content: space-between;
+  height: 102rpx;
+  border-top: 1px solid #f0f0f0;
+}
+
+.options-phone button.item {
+  padding: 0;
+  border-top: 1px solid #f0f0f0;
+  background: #fff;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.options-phone button.item::after {
+  border: none;
+}
+
+.options-phone .item:last-child {
+  border-bottom: 0;
+}
+
+.options-phone .left {
+  display: flex;
+  align-items: center;
+}
+
+.options-phone .left image {
+  width: 30rpx;
+  height: 26rpx;
+}
+
+.options-phone .right {
+  display: flex;
+  align-items: center;
+  padding-right: 30rpx;
+}
+.sumbmitBtn{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.sumbmitBtn button{
+  width:80%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 44rpx;
+  height: 88rpx;
+  margin-top: 88rpx;
+  background: #1E1A19 ;
+}
+.button-hover{
+  background: #fff !important;
+  padding: 0  !important;
+  border: 0  !important;
+}

@@ -1,0 +1,20 @@
+<view class="my_message">
+
+  <view class='list' wx:for="{{ dataList }}">
+    <block >
+      <view class='item'  id="{{item.user_id}}">
+        <view class='left'>
+          <image class="msgImg" src='../../image/icon-user11.png'></image>
+          <text class='title '>{{item.type}}</text>
+        </view>
+        <view class='right'>
+          <text class='time'>{{item.add_time}}</text>
+        </view>
+      </view>
+      <view class="my_message_detail">
+        {{item.content}}
+      </view>
+    </block>
+  </view>
+
+</view>

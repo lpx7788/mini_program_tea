@@ -1,0 +1,18 @@
+<!--pages/index/shopList1.wxml-->
+ <view class='tea' wx:for="{{list}}" wx:key="index" catchtap='linkTo' data-goods_id="{{item.goods_id}}">
+    <view class='bg' style='background: url({{item.goods_image}}) no-repeat;background-size: cover;background-position: center;'>
+      <view class='name'>{{tea.store_name}}</view>
+      <image src="{{item.goods_image}}" mode='widthFix' class='photo1' style="display:none"></image>
+      <image src="{{item.goods_image}}" mode='widthFix' class='photo2' style="display:none"></image>
+    </view>
+    <view class='flex addresss'>
+      <view class='area'>{{item.goods_name}}</view>
+      <view class='money'>
+        <text>￥{{item.goods_promotion_price}}</text>/份</view>
+    </view>
+    <view class='flex'>
+      <view class='area'>{{item.goods_jingle}}</view>
+      <view class='money'>销量
+        <text>{{item.goods_salenum}}</text> </view>
+    </view>
+  </view>

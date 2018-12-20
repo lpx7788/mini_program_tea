@@ -1,0 +1,12 @@
+<view class='bg'></view>
+<view class='panel'>
+  <view class='code'>
+    <image src='{{ datas.url }}'></image>
+  </view>
+  <view class='name'>
+    <text>“Party趴”高级玩家：</text>
+    <text>{{ nickName }}</text>
+  </view>
+  <button class='share-btn' open-type='share'>分享Share</button>
+  <view class='tip'>扫二维码进入小程序</view>
+</view>

@@ -1,0 +1,79 @@
+<!--pages/order/order_deatil.wxml-->
+<view class='maxBox' wx:if='{{r === "r"}}'>
+  <view class='top_info'>
+    <view class='address'>收货地址：</view>
+    <view class='info'>
+      <text class='txt1'>{{order_detail.reciver_name}}</text>
+      <text class='txt2'>{{order_detail.reciver_phone}}</text>
+      <text class='txt3'>{{order_detail.reciver_addr}}</text>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='title_id'>订单编号：
+      <text selectable="true"> {{order_detail.order_sn}} </text>
+      <text class='copy' bindtap='copy'> 复制</text>
+    </view>
+    <view class='title_id' style='text-align:right;'>
+      <text decode='text' class='state'>{{order_detail.state_desc}}</text>
+    </view>
+    <view class='title' wx:for='{{order_detail.goods_list}}' wx:for-item='items' wx:key='index'>
+      <view class='t_number'>{{items.goods_name}}
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;x{{items.goods_num}}</text> </view>
+      <view class='price'>￥{{order_detail.order_amount}}</view>
+    </view>
+    <view class='datetime'>订单生成时间：{{order_detail.add_time}}</view>
+    <view class='datetime'>备注：{{order_detail.order_message}}</view>
+    <block wx:if="{{isDai}}">
+      <view class='btns'>
+        <view class='btn_q' catchtap='cost'>去支付</view>
+        <view class='btn_q btn_a' catchtap='cancle'>取消订单</view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class='btns' wx:if="{{!lock}}">
+        <block wx:if='{{send && !disabled}}'>
+          <view class='btn_q' catchtap='confirm'>{{msg}}</view>
+          <view class='btn_q btn_a' data-stat="0" catchtap='check'>查看物流</view>
+        </block>
+        <view class='btn_q btn_b' wx:if='{{send && !finsh}}' data-stat="1" catchtap='check'>评价</view>
+        <view class='btn_q btn_d' wx:if='{{!send}}' data-stat="2" catchtap='check'>退货</view>
+        <!-- wx:if='{{finsh && !send}}' -->
+        <!-- <view class='btn_q btn_d' wx:if='{{send && !disabled || !finsh}}'  data-stat="3" catchtap='check'>退货</view> -->
+        <view class='btn_q btn_c' wx:if='{{send && !disabled}}' data-stat="4" catchtap='check'>退货</view>
+      </view>
+      <view class='btns' wx:else>
+        <view class='btn_q' data-stat="5" catchtap='check'>联系客服</view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class='maxBox' wx:if='{{r === "v"}}'>
+  <view class='content'>
+    <view class='title_id'>订单编号：{{order_detail.order_sn}}</view>
+    <view class='title_code'>兑换码：{{order_detail.code_list[0].vr_code || '无'}}
+      <text decode='text' class='state' wx:if="{{stas === '1' || stas === '2'}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{stas === '1'?'退款中':'已退款'}}</text>
+      <block wx:else>
+        <text decode='text' class='state' wx:if="{{isUse}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{isType?('待付款'):(order_detail(order_detail.code_list[0].vr_state == '0'?'未兑换':'已兑换'))}}</text>
+        <text decode='text' class='state' wx:else>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已过期</text>
+      </block>
+    </view>
+    <view class='title'>
+      <view class='t_number'>{{order_detail.goods_name}}
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;x{{order_detail.goods_num}}</text> </view>
+      <view class='price'>￥{{order_detail.goods_price}}</view>
+    </view>
+     <!-- wx:if="{{ r === 'v' && !isType }}" -->
+    <view class='datetime'>订单生成时间：{{order_detail.add_time}}</view>
+    <view class='datetime'>到期时间：{{order_detail.vr_indate}}</view>
+     <view class='datetime'>备注：{{order_detail.buyer_msg || ''}}</view>
+  </view>
+  <view class='btns'>
+    <view class='btn_q btn_c' data-stat="4" catchtap='checks' wx:if="{{isUse && stas ==='0'}}">退款</view>
+    <view class='btn_q btn_c' data-stat="6" catchtap='check' wx:if="{{isType}}">取消订单</view>
+    <view class='btn_q btn_d' data-stat="6" catchtap='cost' wx:if="{{isType}}">支付</view>
+    <view class='btn_q' data-stat="5" catchtap='check'>联系客服</view>
+  </view>
+  <view class='canvasBox' wx:if="{{ r === 'v' && !isType }}">
+    <canvas class='canvas' canvas-id='canvas'></canvas>
+  </view>
+</view>

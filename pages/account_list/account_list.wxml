@@ -1,0 +1,65 @@
+<view class="my_count">
+  <view class="my_count_tit flex">
+    <view class="jifen"  >
+      <view iew class='flex1 textC t1 '>
+        <image src='../../image/icon-user9.png'></image>
+        <text style="margin-left:5px">积分</text>
+      </view>
+      <view iew class='flex1 textC text t2'>
+        {{member_integral?member_integral:0}}
+      </view>
+    </view>
+    <view class="jifen" style="border-left:1px solid #fff">
+      <view class='flex1 textC t1'>
+        <image src='../../image/icon-user10.png'></image>
+        <text>收入(元)</text>
+      </view>
+      <view class='flex1 textC text t2'>
+        {{available_predeposit?available_predeposit:0}}
+      </view>
+    </view>
+
+  </view>
+
+  <view class="page_tit " style="background:#4B4847">
+    <ul class="flex">
+      <li class="flex1 textL">
+        <text class=" navText">收入明细</text>
+      </li>
+      <li class="flex1 textR">
+        <text class=" navTextStyle navText selected" bindtap="chooseClick">提现</text>
+      </li>
+    </ul>
+  </view>
+  <view class="gap"></view>
+
+  <view class='list'>
+    <view class='item' wx:for="{{dataList}}">
+      <view class='left'>
+        <text class='title'>{{item.desc}}</text>
+        <text class='date'>{{item.time}}</text>
+      </view>
+      <view class='right'>
+        <text class='money'>{{item.amount}}</text>
+      </view>
+    </view>
+  
+  </view>
+
+  
+<view  class="variety_screen"  wx:if="{{chooseSize}}" bindtap='hideModal'></view>
+
+<view class="variety_attr_box"  wx:if="{{chooseSize}}" animation='{{animationData}}'>
+  <view class="variety_attr_box_in">
+    <view class="flex variety_item" style="position:relative" >
+
+      <input class='weight1 ' placeholder="0" bindinput="money" ></input> 
+      <text class="weight1_text">元</text>
+
+    </view>
+    <view class="bBtn"> 
+      <button type="default" class="variety_btn"  bindtap="withdrawbtn" hover-class="withdrawbtn">确定提现</button>
+    </view>
+  </view>
+</view>
+</view>

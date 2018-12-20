@@ -1,0 +1,43 @@
+/* pages/index/shopList1.wxss */
+.flex{
+  display: flex;align-items: center;justify-content: center;flex-flow: row wrap;
+}
+.tea{
+  padding: 40rpx 30rpx 20rpx 30rpx;border-bottom: 2rpx #eee solid;
+}
+.tea .bg{
+  position: relative;background-color: #000;width: 100%;height: 340rpx;
+}
+.tea .bg .name{
+  position: absolute;top: 20rpx;left: 20rpx;background-color: #eee;z-index: 1;font-size: 24rpx;padding: 0 10rpx;border-radius: 5rpx;line-height: 40rpx;
+}
+.tea .bg .photo1{
+  position: absolute;right: 40rpx;top: 30rpx;width: 120rpx;height: 120rpx;background-color: #fff;border-radius: 50%;border: 4rpx #1E1A19 solid;
+}
+.tea .bg .photo2{
+ position: absolute;right: 40rpx;top: 190rpx;width: 120rpx;height: 120rpx;background-color: #fff;border-radius: 50%;border: 4rpx #1E1A19 solid;
+}
+.tea .flex{
+  line-height: 40rpx;font-size: 30rpx;color: #333;
+}
+.tea .area{
+  flex: 6;
+}
+.tea .money{
+  flex: 4;text-align: right; 
+}
+.tea .flex:last-child{
+  font-size: 26rpx;color: #999;
+}
+.tea .flex:last-child .money{
+  flex: 2;
+}
+.tea .addresss{
+  margin-top: 20rpx;
+}
+.tea .addresss text{
+  color: #9D1212;font-size: 42rpx;
+}
+.tea .flex:last-child text{
+ color: #333;
+}

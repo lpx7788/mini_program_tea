@@ -1,0 +1,111 @@
+page {
+  background: #f8f8f8;
+  font-size: 28rpx;
+  color: #333;
+}
+
+
+ .list {
+   color: #6E6E6E;
+
+  background: #fff;
+  margin-top: 20rpx ;
+  border-bottom: 2rpx solid #e5e5e5;
+}
+
+ .list .item {
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 34rpx;
+}
+
+ .list .item:last-child {
+  border-bottom: none;
+}
+
+ .list .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ .list .left .date {
+  font-size: 24rpx;
+  color: #bbb;
+}
+
+ .right {
+  display: flex;
+  color: #1E1A19;
+  flex-direction:column;
+  justify-content:center;
+  
+
+}
+my_message .list .money {
+  height: 110rpx;
+  line-height: 110rpx;
+
+}
+ .my_count_tit{
+  padding: 100rpx 140rpx;
+  background: #1E1A19;
+  color: #fff;
+
+}
+ .my_count_tit .jifen{
+  width: 100%;
+  text-align: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+ .my_count_tit .text{
+  margin-top: 20rpx;
+}
+ .my_count_tit image{
+  height: 40rpx;
+  width: 40rpx;
+  vertical-align: bottom;
+}
+ .my_count_tit .t1{
+  font-size: 32rpx;
+}
+ .my_count_tit .t1 text{
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-left: 5rpx;
+}
+ .my_count_tit .t2{
+  font-size: 40rpx;
+}
+ .navTextStyle{
+  border-color: #FFDA7F !important;
+  color: #FFDA7F !important;
+  padding: 5rpx 20rpx;
+}
+ .left{
+  position: relative;
+  width:50%;
+}
+.msgImg{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  position: absolute;
+  top: 23rpx;
+  left: 0;
+
+}
+.title{
+  position: absolute;
+  left: 50rpx;
+}
+.my_message_detail{
+  padding: 30rpx;
+  color:#A0A0A0;
+}
+.time{
+  color: #6E6E6E;
+}

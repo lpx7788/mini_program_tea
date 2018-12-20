@@ -1,0 +1,104 @@
+<view class="tea_production">
+
+  <view class="page_tit ">
+
+     <ul class="flex">
+         <!-- <li class="flex1 textL" bindtap="toLook"> -->
+         <!-- <text class="navText">查看已购区域</text> -->
+         <!-- </li> -->
+         <li  class="flex1 textC" bindtap='chooseClick'><text  class="  navText selected" >每年茶叶品种选择</text></li>
+     </ul>
+  </view>
+  <view class="variety flex">
+      <view class=" item" style="border-right:1px solid #fff;border-bottom:1px solid #fff;">
+          <view class="tit" >春季产量 :  <text>(茶叶品种)</text></view>
+          <view class="weight">{{teaDetailList.yield_cun}} kg</view>
+       </view>
+      <view  class=" item" style="border-bottom:1px solid #fff;">
+         <view class="tit">夏季产量 :  <text>(茶叶品种)</text></view>
+        <view class="weight">{{teaDetailList.yield_xia}} kg</view>
+      </view>
+      <view class=" item" style="border-right:1px solid #fff;">
+         <view class="tit">秋季产量 :  <text>(茶叶品种)</text></view>
+        <view class="weight">{{teaDetailList.yield_qiu}} kg</view>
+      </view>
+      <view  class=" item" style="">
+         <view class="tit">全年产量 :  <text>(茶叶品种)</text></view>
+        <view class="weight">{{teaDetailList.yield_sum}} kg</view>
+      </view>
+  </view>
+
+
+    
+
+
+  <view class='info' wx:if="{{videpURl}}">
+    <view class='Title flex'>
+      <view class='name'>我的茶园视频</view>
+    </view>
+
+    <view class="vidio_content" >
+             <image wx:if="{{chooseSize}}"  width="100%" height="100%" src='{{videoImg}}'>
+  </image>
+
+         <video id="myVideo"wx:if="{{!chooseSize}}" poster='{{videoImg}}' src="{{videpURl}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls>
+            <!-- <cover-view class="controls">
+               <cover-image class="img"  src="https://tea-garden.oss-cn-shenzhen.aliyuncs.com/video/video_20181110.mp4?x-oss-process=video/snapshot,t_10000,f_jpg,w_1140,h_676,m_fast" />
+            </cover-view> -->
+         </video>
+       
+       <!-- <video id="myVideo"   wx:if="{{!chooseSize}}"  class="video-xx" src="{{teaDetailList.video}}" controls>
+          <cover-view class="controls">
+               <cover-image class="img"  src="{{teaDetailList.video??x-oss-process=video/snapshot,t_10000,f_jpg,w_1140,h_676,m_fast}}" />
+          </cover-view>
+        </video>
+                 -->
+      
+
+    </view>
+    <view class="uploadTime">
+      <!-- <view class='name'>视频上传时间：2018－09－25</view> -->
+    </view>
+  </view>
+
+  
+</view>
+
+
+<view  class="variety_screen"  wx:if="{{chooseSize}}" bindtap='hideModal'></view>
+
+<view class="variety_attr_box"  wx:if="{{chooseSize}}" animation='{{animationData}}'>
+  <view class="variety_attr_box_in">
+    <view class="flex variety_item" style="position:relative" >
+      <text class="">春茶: 晒青毛茶</text> 
+      <input class='weight1 ' placeholder="{{teaDetailList.sunning}}" bindinput="wathWeight" ></input> kg
+      <radio-group class="radio-group " bindchange="radioChange" >
+        <label class="radio" wx:for="{{items1}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <view class="flex variety_item" style="position:relative" >
+      <text class="">夏茶: 功夫红茶</text> 
+      <radio-group class="radio-group " bindchange="radioChange3" >
+        <label class="radio" wx:for="{{items3}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    
+
+    </view>
+    <view class="flex variety_item" style="position:relative" >
+      <text class="">秋茶: 功夫红茶</text> 
+    
+      <radio-group class="radio-group " bindchange="radioChange2" >
+        <label class="radio" wx:for="{{items2}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <view class="bBtn"> 
+      <button type="default" class="variety_btn"  bindtap="addTeaDemandSM" hover-class="addTeaDemandSM">确定提交</button>
+    </view>
+  </view>
+</view>

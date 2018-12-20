@@ -1,0 +1,52 @@
+<!--pages/http/http1.wxml-->
+<view class='title'>
+  一次性付款案例:
+</view>
+<view class='content'>
+  本合同乙方确认定制茶园
+  <text>2</text> 份，合计
+  <text>1</text> 亩，六年定制费用为人民币
+  <text>零</text>佰
+  <text>零</text>拾
+  <text>肆</text>万
+  <text>零</text>千
+  <text>零</text>佰元整（
+  <text>￥40000.00</text>元）。乙方于签订合同后
+  <text>3</text>日内一次性支付给甲方。
+</view>
+<view class='blanks'></view>
+<view class='title'>分期付款案例:</view>
+<view class='content'>本合同乙方确认定制茶园
+  <text>2</text>份，合计
+  <text>1</text>亩，六年定制费用为人民币
+  <text>零</text>佰
+  <text>零</text>拾
+  <text>肆</text>万
+  <text>零</text>千
+  <text>零</text>佰元整（
+  <text>￥40000.00</text>元）。本合同签订后
+  <text>3</text>日内乙方支付定制费用总额的40%，计人民币
+  <text>零</text>佰
+  <text>零</text>拾
+  <text>壹</text>万
+  <text>陆</text>千
+  <text>零</text>佰元整（
+  <text>￥16000.00</text>元）；定制期限内第三年，即
+  <text>2021</text>年
+  <text>11</text>月
+  <text>07</text>日前支付定制费用总额的40%，计人民币
+  <text>零</text>佰
+  <text>零</text>拾
+  <text>壹</text>万
+  <text>陆</text>千
+  <text>零</text>佰元整（
+  <text>￥16000.00</text>元）；定制期限内第五年，即
+  <text>2023</text>年
+  <text>11</text>月
+  <text>07</text>日前支付定制费用总额的20%，计人民币
+  <text>零</text>佰
+  <text>零</text>拾
+  <text>零</text>万
+  <text>捌</text>千
+  <text>零</text>佰元整（
+  <text>￥8000.00</text>元）。若乙方逾期一个月仍未支付当期定制费用，视为乙方单方面终止本合同。</view>

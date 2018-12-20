@@ -1,0 +1,68 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+page{
+  font-family: "PingFang-SC-Medium";
+}
+.flex{
+  display: flex;
+}
+.flex1{
+  flex: 1;
+}
+.textC{
+  text-align: center;
+}
+.textL{
+  text-align: left;
+}
+.textR{
+  text-align: right;
+}
+ fL{
+   float: left;
+ }
+ fR{
+   float: right;
+ }
+
+.arrow-r image{
+  height: 35rpx;
+  width: 35rpx;
+}
+.arrow-r{
+  position: absolute;
+  right: 15rpx;
+  
+}
+
+.page_tit{
+  padding: 0 30rpx;
+  background:#4b4847;
+}  
+.page_tit .navText {
+  height:100rpx;
+  line-height: 100rpx;
+  color: #fff;
+  font-size:26rpx;
+}
+.navTextStyle{
+  margin:20px 0;
+  border:2rpx solid #fff;
+  border-radius:10rpx;
+  padding:10rpx;
+
+}
+.gap{
+  width:100%;
+  background: #EEEEEE;
+  height: 20rpx;
+}

@@ -1,0 +1,74 @@
+
+.my_stting{
+  border-top: 1px solid #e5e5e5;
+}
+.my_stting .user_body {
+  margin-top: 16rpx;
+  background: #fff;
+}
+
+.my_stting .user_item {
+  height: 108rpx;
+  display: flex;
+}
+
+.my_stting .user_item .icon {
+  width: 100rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my_stting .user_item .icon image {
+  width: 42rpx;
+  height: 42rpx;
+}
+
+.my_stting .user_item .item {
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #e5e5e5;
+  font-size: 30rpx;
+  color: #333;
+  flex: 1;
+  padding-left: 30rpx;
+}
+
+
+
+.my_stting page {
+  background-color: #f2f2f2;
+}
+
+.my_stting .home_head {
+  height:180rpx;
+  text-align: center;
+  position: relative;
+  color: #333;
+}
+
+.my_stting .home_head .content {
+  height: 180rpx;
+  line-height: 180rpx;
+  position: absolute;
+  left:229rpx;
+}
+.my_stting .home_head .poster {
+  position: absolute;
+  top: 36rpx;
+  left: 77rpx;
+  width:108rpx;
+  height:108rpx;
+  border-radius:50%;
+  border: 4rpx solid #fff;
+  margin-bottom: 28rpx;
+  
+}
+
+.my_stting .t_name{
+  font-size: 32rpx;
+  text-align: left;
+  font-weight: bold;
+}
+

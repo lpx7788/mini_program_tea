@@ -1,0 +1,18 @@
+
+<view class='distribution_box'>
+  <view wx:for="{{ datas }}" class='distribution_list' data-url="{{ '../my_join_detail/my_join_detail?id=' + item.order_id }}" bindtap="goto">
+    <image src='{{ item.goods_image }}' class='distribution_img'></image>
+    <view class='distribution_info'>
+      <text class='distribution_title'>{{ item.goods_name }}</text>
+      <view class='profit'>
+        <!-- <text>今天收益：</text> -->
+        <text class='money'>￥{{ item.goods_price }}</text>
+      </view>
+      <!-- <view class='distribution_value'>
+        <view>购买：{{ item.goods_salenum }}</view>
+        <view>浏览：{{ item.brower }}</view>
+        <view>转发：{{ item.forward }}</view>
+      </view> -->
+    </view>
+  </view>
+</view>

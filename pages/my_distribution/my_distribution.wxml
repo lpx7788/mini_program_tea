@@ -1,0 +1,104 @@
+<view class='panel'>
+  <view class='panel-top'>
+    <view class='top'>
+      <view class='avatar'>
+        <image src='{{ datas.image }}' data-type='head' mode="aspectFill"></image>
+      </view>
+      <view class='desc'>
+        <text>{{ datas.goods_name }}</text>
+      </view>
+      <view class='money'>
+        <text>￥{{ datas.goods_price }}</text>
+      </view>
+    </view>
+    <view class='bottom' wx:if="{{ datas.goods_body }}">
+      <view class='detail' data-type='body' bindtap='previewImage'>
+        +
+        <text>查看图片详情</text>
+      </view>
+    </view>
+  </view>
+  <view class='panel-bottom'>
+    <view class='left'>
+      一级佣金：
+      <text>￥{{ datas.fx_price_one }}</text>
+    </view>
+    <view class='right'>
+      二级佣金：
+      <text>￥{{ datas.fx_price_tow }}</text>
+    </view>
+  </view>
+</view>
+
+<view class='panel-money'>
+  <view class='item'>
+    <view class='left'>
+      销售总额：
+      <text>￥{{ datas.goods_price }} x {{ datas.sale_num }}</text>
+    </view>
+    <view class='right'>
+      <text>￥{{ datas.calc_total_price }}</text>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='left'>
+      佣金奖励：
+      <text>-￥{{ datas.fx_price_one }} x {{ datas.one_rate }}</text>
+      <text>-￥{{ datas.fx_price_tow }} x {{ datas.two_rate }}</text>
+    </view>
+    <view class='right orange'>
+      <text>-￥{{ datas.calc_sub_price }}</text>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='left'>
+      所得收益：
+    </view>
+    <view class='right orange'>
+      <text>￥{{ datas.calc_final_price }}</text>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='left'>
+      可售库存：
+    </view>
+    <view class='right orange'>
+      <text>{{ datas.goods_storage }}</text>
+    </view>
+  </view>
+</view>
+
+<view class='panel-statistics'>
+  <view class='top'>
+    <view>
+      <text class='name'>购买</text>
+      <text class='value'>{{ datas.goods_salenum }}</text>
+    </view>
+    <view>
+      <text class='name'>浏览</text>
+      <text class='value'>{{ datas.brower }}</text>
+    </view>
+    <view>
+      <text class='name'>转发</text>
+      <text class='value'>{{ datas.forward }}</text>
+    </view>
+    <view>
+      <text class='name'>转化率</text>
+      <text class='value'>{{ datas.conversion }}%</text>
+    </view>
+  </view>
+  <view class='bottom'>
+    <view class='check'>
+      已有{{ datas.invite_count }}人参与，
+      <text data-url="../break_good/break_good?id={{ datas.goods_id }}" bindtap='goto'>查看我的下线 > </text>
+    </view>
+    <view class='avatar-list'>
+      <image wx:for="{{ datas.invite }}" src='{{ item.member_avatar }}'></image>
+    </view>
+  </view>
+</view>
+
+<view class='footer'>
+  <button class='edit' data-url="{{ '../create_distribution/create_distribution?id=' + datas.goods_id }}" bindtap='goto'>编辑修改</button>
+  <button class='share' open-type='share'>分享传播</button>
+</view>

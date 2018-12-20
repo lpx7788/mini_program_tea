@@ -1,0 +1,65 @@
+/* pages/shopping /shopping.wxss */
+
+page {
+  background-color: #f8f8f8;
+}
+
+.info .content {
+  background-color: #fff;
+}
+
+.info .content .li {
+  padding: 40rpx 30rpx;
+  border-bottom: 2rpx #eee solid;
+}
+
+.info .content .li .detail {
+  flex: 3;
+  padding-left: 20rpx;
+}
+
+.info .content .li .detail .Til {
+  font-weight: 500;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.info .content .li .detail .til {
+  font-size: 26rpx;
+  line-height: 40rpx;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  height: 120rpx;
+  text-align: justify;
+  margin: 20rpx 0;
+}
+
+.info .content .li .detail .tion {
+  width: 100%;
+  color: #999;
+  line-height: 40rpx;
+  font-size: 24rpx;
+}
+
+.info .content .li .detail .tion .time {
+  flex: 1;
+}
+
+.info .content .li .detail .tion .nums {
+  flex: 1;
+  text-align: right;
+  color: #9D1212;
+  font-size: 30rpx;
+}
+
+.info .content .li .infoImg {
+  width: 240rpx;
+  height: 240rpx;
+  border: 1px solid #e5e5e5;
+
+}

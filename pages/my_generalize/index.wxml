@@ -1,0 +1,47 @@
+<view class="my_generalize">
+    <view >
+      <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+          <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">推广码</view>
+          <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">已邀请</view>
+
+      </scroll-view>
+      <swiper class="tab-content " current="{{currentTab}}" duration="300" bindchange="switchTab"
+      style="height:{{winHeight}}rpx">
+          <swiper-item >
+              <scroll-view scroll-y="true" class="scoll-h item1" >
+            
+                  <block  wx:key="*this">
+                      <view class="item-ans">
+                          <view class="item-ans erCode" >
+                                <image src="{{image}}"></image>
+                             
+                          </view>
+                      </view>
+                        <view class="erCodeText"> <text>我的推广码</text></view>
+                  </block>
+               
+              </scroll-view>
+            <import src="../../wxParse/wxParse.wxml" />
+            <view class='step'>
+                <template is="wxParse" data="{{wxParseData:img.nodes}}" />
+            </view>
+          </swiper-item>
+          <swiper-item >
+              <scroll-view scroll-y="true" class="scoll-h item2" >
+                  <block wx:key="*this"  >
+                      <view class="item-ans">
+                          <view class="invited">已邀请 {{dataList.length}} 人</view>
+                      </view>
+                     <view >
+                             <view class="item_list flex tit" wx:for="{{dataList}}">
+                                <view class="flex1 textL">{{item.member_name}}</view>
+                                <view  class="flex1 textR">{{item.member_time}}</view>
+                            </view>
+                     </view>
+                  </block>
+              </scroll-view>
+          </swiper-item>
+      </swiper>
+  </view>
+
+</view>

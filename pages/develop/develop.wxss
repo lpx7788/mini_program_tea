@@ -1,0 +1,43 @@
+page {
+  background: #F8F8F8;
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.panel {
+  width: 670rpx;
+  height: 402rpx;
+  position: relative;
+  z-index: 9;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 728rpx;
+  border-radius: 14rpx;
+}
+
+.panel .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130rpx;
+  color: #35BE6A;
+  font-size: 36rpx;
+  border-bottom: 1px solid #F4F4F4;
+}
+
+.panel .body {
+  display: flex;
+  flex-direction: column;
+  font-size: 32rpx;
+  color: #333;
+  padding: 42rpx 104rpx;
+}
+
+.panel .body text {
+   margin-bottom: 30rpx; 
+}

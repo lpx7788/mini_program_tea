@@ -1,0 +1,13 @@
+<view class='section'>
+  <view class='record' data-url='../cash_list/cash_list' bindtap='goto'>提现记录</view>
+  <text class='tip'>提现到微信</text>
+  <view class='input'>
+    <text>￥</text>
+    <input type='digit' bindinput='money' focus value='{{money}}'></input>
+  </view>
+  <view class='distance'>可提现金额{{ available_predeposit }}元 <text class='all' decode catchtap='all'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全部提现</text></view>
+</view>
+
+<view class='btn'>
+  <text bindtap='forward'>提现Cash</text>
+</view>

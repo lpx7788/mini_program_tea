@@ -1,0 +1,53 @@
+/* pages/http/http.wxss */
+
+.http {
+  padding: 30rpx;
+}
+
+.http_content {
+  padding: 30rpx;
+}
+
+.btn {
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+}
+
+.btn .agree, .btn .refuse {
+  flex: 1;
+  border-radius: 0;
+}
+
+.content {
+  padding: 30rpx;
+  text-indent: 80rpx;
+  font-size: 28rpx;
+  text-align: justify;
+  font-family: PingFang-SC-Regular;
+  font-weight: 400;
+  color: rgba(31, 31, 31, 1);
+  line-height: 48rpx;
+}
+
+.content text.un {
+  text-decoration: underline;
+}
+
+.check {
+  display: flex;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+}
+.check label{
+  width: 30rpx;
+}
+
+.check img {
+  width: 20rpx;
+  height: 20rpx;
+}

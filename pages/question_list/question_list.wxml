@@ -1,0 +1,5 @@
+<view class='list'>
+  <view wx:for="{{value}}" wx:key class='item' data-url='../question_detail/question_detail?doc_id={{item.doc_id}}' bindtap='goto'>
+    <text>{{item.doc_title}}</text>
+  </view>
+</view>

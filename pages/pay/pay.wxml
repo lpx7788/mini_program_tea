@@ -1,0 +1,8 @@
+<!--pages/pay/pay.wxml-->
+<!-- <view style="padding:15px;font-size:14px;">
+    <view>合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同</view>
+    <view>合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同合同</view>
+
+  <button  bindtap='purchase' class="pay_btn" loading="{{loading}}" style="" >确定支付</button>
+</view> -->
+<text >正在支付......</text>

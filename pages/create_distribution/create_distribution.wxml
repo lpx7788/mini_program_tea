@@ -1,0 +1,44 @@
+<!--create_distribution.wxml-->
+<form bindsubmit='submit'>
+  <view class='set_content'>
+    <view class='set_box'>
+      <text>活动主题：</text>
+      <textarea name="goods_name" bindblur="bindTextAreaBlur" placeholder-class="placeholder" placeholder="点击输入内容，限20字" value="{{ datas.goods_name }}" />
+      <view class='set_list'>
+        <text class='title'>价格设置：</text>
+        <input name="price" type='number' placeholder='请输入价格' value="{{ datas.goods_price }}" disabled="{{ id ? true : false }}"></input>
+      </view>
+      <view class='set_list'>
+        <text class='title'>一级佣金：</text>
+        <input name="fx_price_one" type='number' placeholder='请输入佣金' value="{{ datas.fx_price_one }}" disabled="{{ id ? true : false }}"></input>
+      </view>
+      <view class='set_list'>
+        <text class='title'>二级佣金：</text>
+        <input name="fx_price_tow" type='number' placeholder='请输入佣金' value="{{ datas.fx_price_tow }}" disabled="{{ id ? true : false }}"></input>
+      </view>
+      <view class='set_list'>
+        <text class='title'>可售库存：</text>
+        <input name="g_storage" type='number' placeholder='请输入可售库存' value="{{ datas.g_storage }}" disabled="{{ id ? true : false }}"></input>
+      </view>
+      <view class='set_list'>
+        <text class='title'>活动主图：</text>
+        <view class='upload-box'>
+          <view class='choose-main-image {{ previewMainImage ? "hide" : "" }}' bindtap='chooseMainImage'>
+            ＋
+          </view>
+          <image class='preview-main-image' src='{{ previewMainImage }}'></image>
+        </view>
+        <input name="image_path" type='hidden' value="{{ image_path }}" style='display:none !important;'></input>
+      </view>
+    </view>
+    <view class='set_box mt20'>
+      <input name="g_body" type='hidden' value="{{ g_body }}" style='display:none !important;'></input>
+      <image mode='widthFix' class='preview-image' src='{{ previewImage }}'></image>
+      <button class='btn' bindtap="chooseImage">+ 插入图片详情（可选）</button>
+    </view>
+  </view>
+
+  <view class='bottom_box'>
+    <button formType="submit">{{ id ? '编辑' : '创建' }}活动</button>
+  </view>
+</form>

@@ -1,0 +1,159 @@
+page {
+  background: #f8f8f8;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.list {
+  background: #fff;
+  border-top: 2rpx solid #e5e5e5;
+}
+
+.list .item {
+  display: flex;
+  justify-content: space-between;
+  height: 110rpx;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 34rpx;
+}
+
+.list .item:last-child {
+  border-bottom: none;
+}
+
+.list .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list .left .date {
+  font-size: 24rpx;
+  color: #bbb;
+}
+
+.list .right {
+  display: flex;
+  align-items: center;
+  color: #1E1A19;
+}
+.my_count_tit{
+  padding: 100rpx 140rpx;
+  background:linear-gradient(0deg,rgba(31,22,19,0.95),rgba(46,40,39,0.95));
+  color: #fff;
+
+}
+.my_count_tit .jifen{
+  width: 100%;
+  text-align: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.my_count_tit .text{
+  margin-top: 20rpx;
+}
+.my_count_tit image{
+  height: 40rpx;
+  width: 40rpx;
+  vertical-align: bottom;
+}
+.my_count_tit .t1{
+  font-size: 32rpx;
+
+}
+.my_count_tit .t1 text{
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-left: 5rpx;
+}
+.my_count_tit .t2{
+  font-size: 40rpx;
+}
+.navTextStyle{
+  border-color: #FFDA7F !important;
+  color: #FFDA7F !important;
+  padding: 5rpx 20rpx;
+}
+.variety_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+.variety_attr_box button{
+  width: 80%;
+  margin:0 auto;
+  background: #3C3C3C;
+  color: #fff;
+}
+
+.variety_attr_box {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+
+  height: 300rpx;
+  font-size: 30rpx;
+
+}
+.variety_attr_box_in{
+  padding: 30rpx;
+}
+
+radio .wx-radio-input{
+  border-radius: 50%;/* 圆角 */
+  width: 40rpx;
+  height: 40rpx;
+}
+
+radio .wx-radio-input.wx-radio-input-checked{
+  border: none;
+}
+.weight1{
+  border:1px solid #ededed;
+  display:inline-block;
+  width:300rpx;
+  height:50rpx !important;
+  min-height:50rpx !important;
+  margin:3rpx 20rpx 0;
+  text-align:center;
+  line-height:50rpx;
+}
+.weight1_text{
+  height:50rpx !important;
+  min-height:50rpx !important;
+  line-height:50rpx;
+}
+.flex2{
+  flex: 3;
+  margin-left: 20rpx;
+  float: right;
+}
+
+.variety_item{
+  width: 700rpx;
+  margin-top:40rpx;
+}
+.variety_btn{
+  margin-top: 100rpx;
+  position: absolute;
+  bottom: 40rpx;
+}
+.bBtn{
+  height:100px;
+  width:690rpx;
+}
+.bBtn button{
+  width:690rpx;
+}
