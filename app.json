@@ -12,7 +12,9 @@
     "pages/my/my_partner/index",
     "pages/my/my_message/index" ,
     "pages/my/my_phone/index",
-    "pages/login/index"
+    "pages/login/index",
+    "pages/home/home_detal/index"
+    
   ],
   "window": {
     "navigationBarBackgroundColor": "#000000",

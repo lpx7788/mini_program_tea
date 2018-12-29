@@ -116,6 +116,8 @@ common.get = (url, data, callback, slef, show_loading) => {
 // 获取用户信息
 common.getUserInfo = (cb) => {
   const request = (code, res) => {
+    console.log(1111);
+    console.log(code, res);
     //获取encryptedData iv
     const encryptedData = res.encryptedData,
       iv = res.iv,
@@ -180,6 +182,7 @@ common.getUserInfo = (cb) => {
   // })
   wx.login({
     success: res => {
+      console.log(res);
       const code = res.code;
       wx.getUserInfo({
         success(res) {

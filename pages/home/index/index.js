@@ -43,7 +43,7 @@ Page({
         url = 'infoList';
         break;
       case '2':
-        url = 'info_detail?id=' + id;
+        url = '../home_detal/index?id=' + id;
         break;
       case '3':
         url = 'shopList1';
@@ -52,7 +52,7 @@ Page({
         url = 'shopList2';
         break;
       case '5':
-        url = 'info_detail?id=' + 30;
+        url = '../home_detal/index?id=' + 30;
         // url = 'info_detail?id=' + article_id;
         break;
     }

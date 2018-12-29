@@ -1,0 +1,15 @@
+<!--pages/index/info_detail.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class='box'>
+
+   <video id="myVideo" v-if="{{video_Url}}" poster='{{videoUrl}}' src="{{video_Url}}" controls show-center-play-btn></video>
+
+  <view class='title'>{{title}}</view>
+  <view class='flex'>
+    <view class='time'>{{time}}</view>
+
+  </view>
+  <view class='content'>
+    <template is="wxParse" data="{{wxParseData:img.nodes}}" />
+  </view>
+</view>

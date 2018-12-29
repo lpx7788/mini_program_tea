@@ -14,6 +14,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(o) {
+    console.log(o);
     console.log(getCurrentPages())
     var page = getCurrentPages(),
       options = page[page.length - 2].options,
@@ -22,7 +23,7 @@ Page({
       router,
       options
     })
-    // common.share(this);
+    common.share(this);
   },
   getUserInof(e) {
     const that = this,
