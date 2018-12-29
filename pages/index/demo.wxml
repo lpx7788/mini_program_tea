@@ -1,8 +1,0 @@
-<!--pages/index/demo.wxml-->
-<import src="../../wxParse/wxParse.wxml" />
-<view class='title'>{{title}}</view>
-<view class='time'>{{time}}</view>
-<!-- <view class='content'>{{content}}</view> -->
- <view class='detail_img'>
-      <template is="wxParse" data="{{wxParseData:img.nodes}}" />
-    </view>

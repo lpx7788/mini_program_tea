@@ -1,5 +1,5 @@
 const api = {
-  load_url: '/index.php?act=connect&op=index', // 登录接口
+  load_url: '/index.php?act=login&op=wxapp_login', // 登录接口
   add_good_url: '/index.php?act=seller_goods&op=fx_goods_add', // 添加商品接口
   edit_good_url: '/index.php?act=seller_goods&op=edit_goods', // 编辑商品接口
   upload_image_url: '/index.php?act=seller_goods&op=image_upload', // 上传商品图片

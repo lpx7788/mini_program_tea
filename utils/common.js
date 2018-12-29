@@ -113,6 +113,7 @@ common.get = (url, data, callback, slef, show_loading) => {
   })
 }
 
+// 获取用户信息
 common.getUserInfo = (cb) => {
   const request = (code, res) => {
     //获取encryptedData iv

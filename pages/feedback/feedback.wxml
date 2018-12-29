@@ -1,7 +1,0 @@
-<view class='textarea'>
-  <textarea bindinput='feed' maxlength='-1'></textarea>
-</view>
-
-<view class='btn'>
-  <text bindtap='feedback'>提交</text>
-</view>

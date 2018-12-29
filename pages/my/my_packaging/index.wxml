@@ -1,0 +1,77 @@
+<view class="my_packing">
+  <swiper wx:if="{{sliderList.length}}" class='swiper' circular="circular" indicator-active-color="#fff" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{sliderList}}" wx:key="unique">
+      <swiper-item>
+        <view catchtap='click' data-id='{{item.data}}'>
+          <image src="{{item.image}}" class="slide-image" />
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+  <!--<swiper class='swiper' circular="circular" indicator-active-color="#fff" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block >
+    <swiper-item>
+      <view catchtap='click' >
+        <image src="https://tea-garden.oss-cn-shenzhen.aliyuncs.com/mobile/05943955067735549.jpg" class="slide-image" />
+      </view>
+    </swiper-item>
+  </block>
+  <block >
+    <swiper-item>
+      <view catchtap='click' >
+        <image src="https://tea-garden.oss-cn-shenzhen.aliyuncs.com/mobile/05943955067735549.jpg" class="slide-image" />
+      </view>
+    </swiper-item>
+  </block>
+  <block >
+    <swiper-item>
+      <view catchtap='click' >
+        <image src="https://tea-garden.oss-cn-shenzhen.aliyuncs.com/mobile/05943955067735549.jpg" class="slide-image" />
+      </view>
+    </swiper-item>
+  </block>
+</swiper>-->
+
+  <view class='info'>
+    <view class='Title flex'>
+      <view class='name'>包装定制说明</view>
+    </view>
+    <view class='content'>
+      {{explain}}
+    </view>
+  </view>
+
+  <view class='info'>
+    <view class='Title flex' style="border:none">
+      <view class='name'>我的个性化包装</view>
+    </view>
+    <view class="content">
+      <view>文字定制
+        <input placeholder='输入需定制的文字' bindinput='save' data-type="1" placeholder-class='placeholder'></input>
+      </view>
+      <view class="upload_logo">
+        <view class="upload_tit">图片LOGO </view>
+        <view bindtap="uploader">
+          <image wx:if="{{obj.image}}" src='{{obj.image}}' mode='widthFix'></image>
+          <image wx:else src='../../../image/upload.png' mode='widthFix'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="page_Bottom flex">
+    <view class=" flex1 textC" style="background:rgba(120,120,120,1);">
+
+      <button class="kf_button con_listbox" open-type="contact" session-from="weapp"  >
+        联系客服
+      </button>
+    </view>
+    <view class=" flex1 textC" bindtap="submitBtn" >
+     <button class="kf_button con_listbox" style="background:rgba(30,26,25,1);color:#fff" >
+        立即提交
+      </button>
+    </view>
+  </view>
+</view>
